@@ -316,8 +316,8 @@ if (typeof module !== 'undefined') module.exports = BZC;
 
   // full screen viewer
   var modal=document.getElementById('bztModal'),mf=document.getElementById('bztModalFrame'),cur=null;
-  function openModal(st){cur=st;var s=st.t.systems[st.s];document.getElementById('bztModalTitle').textContent=st.t.name+' · '+s.name;mf.srcdoc=st.t.build(s);modal.classList.add('on');document.body.style.overflow='hidden';document.getElementById('bztModalClose').focus()}
-  function closeModal(){modal.classList.remove('on');document.body.style.overflow='';mf.srcdoc='';if(cur)cur.sec.querySelector('[data-a="full"]').focus()}
+  function openModal(st){cur=st;var s=st.t.systems[st.s];document.getElementById('bztModalTitle').textContent=st.t.name+' · '+s.name;mf.onload=function(){try{var d=mf.contentDocument;d.documentElement.style.overscrollBehavior='contain';d.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});mf.contentWindow.focus()}catch(e){}};mf.srcdoc=st.t.build(s);modal.classList.add('on');document.documentElement.style.overflow='hidden';document.body.style.overflow='hidden'}
+  function closeModal(){modal.classList.remove('on');document.documentElement.style.overflow='';document.body.style.overflow='';mf.onload=null;mf.srcdoc='';if(cur)cur.sec.querySelector('[data-a="full"]').focus()}
   document.getElementById('bztModalClose').onclick=closeModal;
   document.getElementById('bztModalCopy').onclick=function(){if(cur)copy(cur.t.build(cur.t.systems[cur.s]),'HTML copied')};
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('on'))closeModal()});
