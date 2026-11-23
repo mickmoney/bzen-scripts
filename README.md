@@ -44,6 +44,18 @@ Always load a tagged version (`@<commit-sha>`), never a branch, so live pages do
 
 A `<tbody id="bztTable">` on the page is filled with a summary row per template only if it's empty, so a static table in Webflow is left alone.
 
+### Text reveal animations cheat sheet (`/guides/text-reveal-animations`)
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mickmoney/bzen-scripts@<commit-sha>/guides/text-reveals.min.css">
+
+<div id="bz-text-reveals"></div>   <!-- controls, 20 reveal cards and prompt templates -->
+
+<script src="https://cdn.jsdelivr.net/gh/mickmoney/bzen-scripts@<commit-sha>/guides/text-reveals.min.js" defer></script>
+```
+
+Reveal data, prompts and templates live in the `REVEALS` and `PATTERNS` arrays near the top of `text-reveals.js`. Styles are scoped to `.trc-root`, which the script adds to the mount.
+
 ## Releasing a change
 
 1. Edit the file and commit.
