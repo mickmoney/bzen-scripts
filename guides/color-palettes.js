@@ -32,7 +32,7 @@
    ["Midnight Deploy","dark","#000000","#0A0A0A","#EDEDED","#A1A1A1","#FFFFFF","#000000","#0070F3","#242424",["#FF0080","#7928CA","#0070F3"]],
    ["Group Chat","dark","#1E1F22","#2B2D31","#F2F3F5","#B5BAC1","#5865F2","#FFFFFF","#57F287","#3F4147",["#5865F2","#EB459E"]],
    ["Revenue","dark","#0D1117","#161B22","#E6EDF3","#9198A1","#238636","#FFFFFF","#2F81F7","#30363D",["#8250DF","#2F81F7","#3FB950"]],
-   ["Pressure","bold","#F4F2F0","#FFFFFF","#212121","#5C5A57","#212121","#FFE74C","#DFF50A","#E2DFDB",["#001B4A","#5683D2","#DFF50A"]],
+   ["Runway","bold","#F4F2F0","#FFFFFF","#212121","#5C5A57","#212121","#FFE74C","#DFF50A","#E2DFDB",["#001B4A","#5683D2","#DFF50A"]],
    ["Pivot","bold","#FFFFFF","#F5F5F5","#1E1E1E","#5E5E5E","#1E1E1E","#FFFFFF","#A259FF","#E6E6E6",["#F24E1E","#A259FF","#1ABCFE"]],
    ["Cold Email","bold","#FFE01B","#FFFFFF","#241C15","#4D4130","#241C15","#FFFFFF","#007C89","#E6C800",["#007C89","#241C15"]]
   ];
